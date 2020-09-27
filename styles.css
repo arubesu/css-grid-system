@@ -7,32 +7,37 @@ html, body {
 
 header {
   background: yellow;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-area: header;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
   /* grid-column-end: span 3; */
 }
 
 main {
   background: blue;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-area: main;
+  /* grid-column-start: 1;
+  grid-column-end: 2; */
   /* grid-column-end: span 2; */
 }
 
 aside {
   background: green;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-area: aside;
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
 }
 
 footer {
   background: red;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-area: footer;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
 }
 
 .container {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 20vh 70vh 10vh;
+  grid-template-areas: "header header" "main aside" "footer footer"
 }
