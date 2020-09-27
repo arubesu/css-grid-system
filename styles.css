@@ -7,20 +7,32 @@ html, body {
 
 header {
   background: yellow;
-  height: 100px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* grid-column-end: span 3; */
 }
 
 main {
   background: blue;
-  height: 100px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  /* grid-column-end: span 2; */
 }
 
 aside {
   background: green;
-  height: 100px;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 footer {
   background: red;
-  height: 100px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh;
 }
