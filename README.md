@@ -1,6 +1,6 @@
 # CSS GRID
 
-#Learning GRID System with @maykbrito from Rocketseat
+Learning GRID System with @maykbrito from Rocketseat
 
 ## GRID
 
